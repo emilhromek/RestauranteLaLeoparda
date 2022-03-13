@@ -1,0 +1,31 @@
+﻿@{
+    ViewData["Title"] = "Inicio";
+}
+
+<h4 class="text-light">Elija una fecha:</h4>
+<br />&nbsp;
+
+<input type="date" id="fecha" onload="myFunction()" onchange="myFunction()" name="trip-start">
+
+<br />&nbsp;
+
+<h4 class="text-light">Lista de comandas:</h4>
+
+<br>
+
+<div>
+    <table class="table bg-light">
+        <thead>
+            <tr>
+                <th class="text-dark" scope="col">Forma de entrega</th>
+                <th class="text-dark" scope="col">Precio total</th>
+                <th class="text-dark" scope="col">Fecha</th>
+                <th class="text-dark" scope="col">Mercaderías</th>
+            </tr>
+        </thead>
+        <tbody id="cuerpodetabla">
+        </tbody>
+    </table>
+</div>
+
+<script src="~/js/comandas1.js" type="text/javascript"></script>
